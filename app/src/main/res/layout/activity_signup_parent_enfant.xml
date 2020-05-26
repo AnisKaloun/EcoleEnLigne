@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ParentLayout"
+    tools:context=".SignupParentEnfantActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:onClick="hideKeyborad"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/enfantid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <!--  Nom Enfant -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_nameEnfant"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_NomEnfant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom de votre enfant"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--  Prenom Enfant -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_prenomEnfant"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_prenomEnfant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prenom de votre enfant"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.tiper.MaterialSpinner
+            android:id="@+id/Niveau_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/niveau_Classe"
+            app:boxBackgroundColor="@color/colorAccent"
+            app:boxBackgroundMode="outline"
+            app:spinnerMode="dialog"></com.tiper.MaterialSpinner>
+
+        <com.tiper.MaterialSpinner
+            android:id="@+id/Abonement_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_abo"
+            app:boxBackgroundColor="@color/colorAccent"
+            app:boxBackgroundMode="outline"
+            app:spinnerMode="dialog"></com.tiper.MaterialSpinner>
+
+        <TextView
+            android:id="@+id/txtformuP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="mode de formation"></TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/optionprogression"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formule	progression"
+                android:theme="@style/RadioButtonThem" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/optionaccompagnement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Formule	accompagnement"
+                android:theme="@style/RadioButtonThem" />
+
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

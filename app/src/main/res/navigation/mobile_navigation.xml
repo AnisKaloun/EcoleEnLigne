@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.ecoleenligne.ui.Cours.CoursFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_cours" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.ecoleenligne.ui.Tchat.TchatFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_tchat" />
+
+    <fragment
+        android:id="@+id/navigation_liste_enfant"
+        android:name="com.example.ecoleenligne.ui.ListeEnfant.ListeEnfantFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_listeenfant" />
+
+    <fragment
+        android:id="@+id/navigation_Recommandation"
+        android:name="com.example.ecoleenligne.ui.Recommandation.RecommandationFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_recommandation" />
+
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.ecoleenligne.ui.profil.ProfilFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profil" />
+</navigation>

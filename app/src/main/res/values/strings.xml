@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">EcoleEnLigne</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_Cours">Cours</string>
+    <string name="menu_Tchat">Tchat</string>
+    <string name="menu_Profil">Profil</string>
+    <string name="menu_ListeEnfant">Liste Enfants</string>
+    <string name="menu_Recommandation">Recommandation</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="niveaux_array">
+        <item> 6éme </item>
+        <item> 5éme </item>
+        <item> 4éme </item>
+        <item> 3éme</item>
+        <item> 1re </item>
+        <item> terminal S </item>
+        <item> terminal L </item>
+    </string-array>
+
+    <string-array name="abonement_array">
+        <item> semestriel 60€</item>
+        <item> annual 30€</item>
+        <item> monthly  10€</item>
+
+    </string-array>
+
+    <string-array name="nombre_enfant_array">
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+    </string-array>
+
+    <string name="err_msg_nbr_enfant">veuillez choisir le nombre d\'enfant</string>
+    <string name="err_msg_prenom">Enter votre prenom</string>
+    <string name="err_msg_name">Enter votre nom</string>
+    <string name="err_msg_email">Enter votre addresse mail</string>
+    <string name="err_msg_nameEnfant">Entrer le nom de votre enfant</string>
+    <string name="err_msg_prenomEnfant">Entrer le prenom de votre enfant</string>
+    <string name="err_msg_emptyPassword">veuillez saisir un mot de passe</string>
+    <string name="err_msg_confirmermotdepasse">Erreur dans la confirmation du mot de passe </string>
+    <string name="type_abo">type abonnement</string>
+    <string name="niveau_Classe">Niveau</string>
+    <string name="err_msg_niveau">Veuillez choisir un niveau</string>
+    <string name="err_msg_abo">Veuillez choisir un type d\'abonnement</string>
+    <string name="nombre_enfant">nombre d\'enfant</string>
+    <string name="buy_with_googlepay_button_content_description">Buy with Google Pay</string>
+    <string name="googlepay_button_content_description">Google Pay</string>
+    <string name="googlepay_status_checking">Checking if Google Pay is available...</string>
+    <string name="googlepay_status_unavailable"><![CDATA[>Unfortunately, Google Pay is not available on this phone.]]></string>
+    <string name="twitterUsername">Username</string>
+    <string name="notification_title">Recommandation</string>
+    <string name="reminder_title">EcoleEnLigne</string>
+    <string name="default_notification_channel_id">Channel1</string>
+    <string name="pref_previously_started">True</string>
+</resources>

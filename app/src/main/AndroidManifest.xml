@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecoleenligne">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".EcoleEnLigne"
+        android:theme="@style/Apptheme">
+        <activity android:name=".PresentationActivity"></activity>
+        <activity android:name=".ui.ListeEnfant.DetailEnfantActivity" />
+        <activity android:name=".ui.Cours.WebCoursEnLigneActivity" />
+        <activity android:name=".ui.Cours.VisualiserpdfActivity" />
+        <activity android:name=".ui.Cours.QuizActivity" />
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".ReceiverCall">
+            <intent-filter>
+                <action android:name="com.example.ecoleenligne" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".ReminderBroadcast">
+            
+        </receiver>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ui.Cours.CoursMathActivity" />
+        <activity android:name=".PayementActivity" />
+        <activity android:name=".SignupParentEnfantInfoActivity" />
+        <activity android:name=".SignupEnfantActivity" />
+        <activity android:name=".SignupParentEnfantActivity" />
+        <activity android:name=".SignupParentActivity" />
+        <activity android:name=".SplachScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:focusableInTouchMode="true"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

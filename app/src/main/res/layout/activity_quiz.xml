@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Cours.QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/gradStart">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Bienvenue au Quiz"
+                android:layout_gravity="center"
+                android:textSize="@dimen/fab_margin">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="Module :"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/NomModule"
+                    android:text="...">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="Cours de :"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/NomCours"
+                    android:text="...">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Niveau du quiz"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/NiveauDuQUiz"
+                    android:text="...">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="votre note :"></TextView>
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="..."></TextView>
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="/6">
+
+                </TextView>
+            </LinearLayout>
+            //------------------------------------------------------------------------------------------
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Q1- "></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/question1"
+                android:text="...">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption1Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOpon2Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/option1Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option1"></TextView>
+                <TextView
+
+                    android:id="@+id/option2Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option2"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        //-------------------------Question 2------------------------------------------------------------------------------------
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Q2- "></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/question2"
+                android:text="...">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption1Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption2Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/option1Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option1"></TextView>
+                <TextView
+
+                    android:id="@+id/option2Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option2"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        //---------------------------------------------------question3------------------------------------------
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Q3- "></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/question3"
+                android:text="...">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption1Q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption2Q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/option1Q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option1"></TextView>
+                <TextView
+
+                    android:id="@+id/option2Q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option2"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        /--------------------------------------------------question4-------------------------------------------------
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Q4- "></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/question4"
+                android:text="...">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption1Q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption2Q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/option1Q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option1"></TextView>
+                <TextView
+
+                    android:id="@+id/option2Q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option2"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        //------------------------------------question 5---------------------------------------------------------
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Q5- "></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/question5"
+                android:text="...">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption1Q5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption2Q5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/option1Q5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option1"></TextView>
+                <TextView
+
+                    android:id="@+id/option2Q5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option2"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        /////////--------------------------------question 6--------------------------------------
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Q6- "></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/question6"
+                android:text="...">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption1Q6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioOption2Q6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:theme="@style/RadioButtonThem" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/option1Q6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option1"></TextView>
+                <TextView
+
+                    android:id="@+id/option2Q6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="option2"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txterreur"
+            android:layout_gravity="center"></TextView>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/ButtonValider"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Valider" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</ScrollView>

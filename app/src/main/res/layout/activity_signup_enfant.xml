@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:onClick="hideKeyborad">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:onClick="hideKeyborad"
+        >
+
+
+        <!--  name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/input_layout_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nom"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  prenom -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/input_layout_prenom"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_prenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="prenom"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--  Email Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/input_layout_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  mot de passe  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/input_layout_motdepasse"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_motdepassef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                android:hint="Mot de passe"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--  confirme mot de passe -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/input_layout_confirmemotdepassef"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_confirmemorpasse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                android:hint="Confirme votre mot de passe "
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.tiper.MaterialSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/Niveau_spinner_enfant"
+            app:spinnerMode="dialog"
+            app:boxBackgroundMode="outline"
+            android:hint="@string/niveau_Classe"
+            app:boxBackgroundColor="@color/colorAccent"
+            >
+        </com.tiper.MaterialSpinner>
+
+
+        <com.tiper.MaterialSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/Abonement_spinner"
+            app:spinnerMode="dialog"
+            app:boxBackgroundMode="outline"
+            android:hint="@string/type_abo"
+            app:boxBackgroundColor="@color/colorAccent"
+            >
+        </com.tiper.MaterialSpinner>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtformu"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="mode de formation"
+            >
+        </com.google.android.material.textview.MaterialTextView>
+
+        <RadioGroup
+            android:id = "@+id/radioGroup"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:orientation = "vertical" >
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id = "@+id/optionprogression"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "Formule	progression"
+                android:hint="Formule Progression"
+                android:theme="@style/RadioButtonThem"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id = "@+id/optionaccompagnement"
+                android:layout_width ="wrap_content"
+                android:layout_height ="wrap_content"
+                android:text ="Formule accompagnement"
+                android:hint="Formule accompagnement"
+                android:theme="@style/RadioButtonThem"/>
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/textButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Suivant" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_cours"
+            android:title="@string/menu_Cours" />
+        <item
+        android:id="@+id/nav_gallery"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="@string/menu_Tchat" />
+
+        <item
+            android:id="@+id/nav_liste_enfant"
+            android:icon="@drawable/ic_school"
+            android:title="@string/menu_ListeEnfant" />
+
+        <item
+            android:id="@+id/nav_recommandation"
+            android:icon="@drawable/ic_advertising"
+            android:title="@string/menu_Recommandation" />
+
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_Profil" />
+    </group>
+</menu>
